@@ -31,6 +31,11 @@ export const App: FC = () => {
   return (
     <div>
       <h1>簡単メモアプリ</h1>
+      {/* input:入力フォーム 
+          type属性:フォームの種類(テキスト、数字のみ、検索フォーム等) 
+          value:初期値を設定又は入れたい値を記述 
+          onChange:フォームの内容が変化した時に発火する
+      */}
       <input type="text" value={text} onChange={onChangeText} />
       <SButton onClick={onClickAdd}>追加</SButton>
       <MemoList memos={memos} onClickDelete={onClickDelete} />
